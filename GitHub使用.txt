@@ -1,0 +1,23 @@
+第一步：在网页上创建仓库repository
+第二步：使用git clone https://github.com/用户名/第一步创建的repository名字.git， 将创建的仓库clone到本地。
+第三步：在本地仓库中完成相关文件的创作，可以是任意类型的文件
+第四步：在该仓库目录下，使用打开git bush，使用代码操作：“git add ‘第三步创建的文件’”
+第五步：代码操作“git commit -m '可以添加对创建的文件的简单描述' ”
+第六步：代码操作“git push origin master”完成提交，网页上对应仓库会出现上述在本地创建的文件
+
+# 注：当要更新某个文件时，在更新完成之后，只有重复‘步骤三，四，五’才能完成更新
+
+origin 表示非本地，远端的意思
+
+分支查看：git branch 可查看当前所在分支。
+	 git branch --all 可查看所有分支
+
+创建新的分支：
+	在当前master主分支下：git branch [新分支的名字]
+
+分支切换：
+	git checkout [分支名称]，可切换分支。举例：git checkout master，则切换到master主分支下。
+
+更新分支内容：
+	在当前分支下：git pull origin [另一个分支]，获取另一个分支的最新内容。
+	当前分支下：git push origin [当前分支]，则可以将另一个分支上的最新内容，同步到当前分支。
